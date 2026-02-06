@@ -94,9 +94,11 @@ A key challenge is that the auction outcome $\mathbb{1}(b_i > m_i)$ is non-diffe
 
 **1. Gradient Ascent with Sigmoid Smoothing:**
 To enable gradient-based updates, we approximate the hard win/loss step function with a differentiable sigmoid:
+
 $$
 P(\text{win}) \approx \sigma(\beta(b_i - m_i)) = \frac{1}{1 + e^{-\beta(b_i - m_i)}}
 $$
+
 Where $\beta$ is a temperature parameter controlling the steepness.
 * **Update:** $\theta_{t+1} = \Pi_{\Theta}[\theta_t + \alpha_t \nabla_\theta \tilde{U}_t(\theta_t)]$
 
@@ -113,9 +115,11 @@ Where $\beta$ is a temperature parameter controlling the steepness.
 ### 4.3 Convergence Analysis Methods
 **1. Analytical Benchmark Validation:**
 For symmetric agents with valuations $v \sim U[0,1]$, the theoretical symmetric Nash Equilibrium (SNE) is known:
+
 $$
 b^*(v) = \frac{N-1}{N}v
 $$
+
 We will measure deviation from this analytical solution to validate convergence.
 
 **2. Strategy Distance Metrics:**
