@@ -1,3 +1,10 @@
+# Self-Critique
+
+## Strengths
+- Very clear technical approach with clear, actionable steps.
+- Modeled complex market dynamics effectively as mathematical functions that formalize our definition of utility, private values, and our benchmark w*.
+- We recognized the issues with a hard-win function and pivoted by implementing a softer sigmoid function instead.
+
 ## Areas for Improvement
 - Real-world applicability could be clarified. The current model doesn’t account for many real-world factors such as budgets, bidder heterogeneity, and reserve prices which can strongly affect how applicable our results are beyond the toy setting.
 - Results may depend heavily on the smoothing parameter β and the limited setting (N = 2); a β sensitivity sweep and experiments with N > 2 are needed to show robustness.
